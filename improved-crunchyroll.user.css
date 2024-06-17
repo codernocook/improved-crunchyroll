@@ -1,0 +1,109 @@
+/* ==UserStyle==
+@name         improved-crunchyroll
+@namespace    https://github.com/codernocook/crunchyroll-improved
+@version      1.0.0
+@description  Improve Crunchyroll website interface
+@author       codernocook
+==/UserStyle== */
+@-moz-document domain("crunchyroll.com") {
+    body {
+        background: #000000;
+    }
+
+    * {
+        border-radius: 10px;
+    }
+
+    .header-content {
+        border-radius: 8px;
+        opacity: 70%;
+        transition: all;
+        transition-duration: .5s;
+        width: 95%;
+        top: 3%;
+    }
+
+    .header-content:hover {
+        border-radius: 8px;
+        opacity: 100%;
+        transition: all;
+        transition-duration: .5s;
+        width: 95%;
+        top: 3%;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    /* Computer screen default */
+    .erc-large-header {
+        width: 100%;
+        height: 0px;
+        flex: none;
+    }
+
+    /* Add gap if user is on mobile (Or device have screen as small as or smaller than mobile) */
+    @media (max-width: 1000px) {
+        .erc-large-header {
+            width: 100%;
+            height: 0px;
+            flex: 0 0 3.75rem;
+        }
+    }
+
+    /* General, Account, Purchase & Credit in Crunchyroll account settings */
+    .text--gq6o-:hover {
+        color: #0cc8f2;
+        transition: all;
+        transition-duration: .5s;
+    }
+
+    .heading--nKNOf:hover {
+        color: #0cc8f2;
+        transition: all;
+        transition-duration: .5s;
+    }
+
+    /* play, add to watchlist, add to crunchylist button on most popular category on the main page crunchyroll page */
+    /* The button on larger interface, use for computer a side bar left side */
+    .tooltip-icon__action-icon-button--KEDNK:hover {
+        color: #0cf2cb;
+        transition: all;
+        transition-duration: .5s;
+    }
+
+    /* On mobile or smaller interface */
+    .button--xqVd0 button--is-type-one-weak--KLvCX {
+        color: #fff;
+        transition: fill .5s ease;
+    }
+
+    /* Rotate animation */
+    @keyframes improved_rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* "Show more" button patch because View Release Calendar replaced with Show more button */
+    .button--xqVd0 {
+        border-radius: 10px;
+    }
+
+    /* Share icon */
+    .share-icon:hover {
+        color: #0cc8f2;
+        animation: improved_rotation .5s ease-in-out;
+    }
+
+    .episode-rate-action__icon--DEMWd:hover {
+        fill: #0cc8f2;
+        transition: all;
+        transition-duration: 1s;
+        animation: improved_rotation .5s ease-in-out;
+    }
+}
