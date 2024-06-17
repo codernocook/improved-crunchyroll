@@ -106,4 +106,31 @@
         transition-duration: 1s;
         animation: improved_rotation .5s ease-in-out;
     }
+    
+    /* Video player is not allowed to be rounded */
+    /* No longer need, they don't cut much content, to use this uncomment below
+    
+    /* uncomment this if you don't want to round video player boder
+    .video-player-wrapper {
+        border-radius: 0;
+    }
+
+    .video-player-wrapper * {
+        border-radius: 0;
+    }
+    
+    #vilos {
+        border-radius: 0;
+    }
+    
+    #vilos * {
+        border-radius: 0;
+    }
+    
+    /* Player control still need to be rounded *
+    #velocity-controls-package * {
+        border-radius: 10px;
+    }
+    
+    uncomment this if you don't want to round video player boder */
 }
